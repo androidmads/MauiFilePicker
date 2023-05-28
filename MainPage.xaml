@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFilePicker.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Start">
+
+            <Button
+                x:Name="ImageSelect"
+                Text="Select Barcode"
+                SemanticProperties.Hint="Select Image"
+                Clicked="SelectBarcode"
+                HorizontalOptions="Center" />
+            <Label x:Name="outputText"
+                   Padding="10"/>
+            <Image
+                x:Name="barcodeImage"
+                SemanticProperties.Description="Selected Barcode"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
